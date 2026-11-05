@@ -1,0 +1,27 @@
+{
+  "tool": "knapmem",
+  "version": "0.1.0",
+  "git_sha": "n/a",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39",
+  "numpy": "2.5.4",
+  "dataset_checksum": "023cf65edd8990804eed0afc4c9d65a925368ca71573f860431c8bc01a37cd3e",
+  "budgets": [
+    256,
+    512,
+    1024
+  ],
+  "config": {
+    "seed": 7,
+    "n_scenarios": 200,
+    "items_per_scenario": 60,
+    "queries_per_scenario": 40,
+    "cost_min": 20,
+    "cost_max": 120,
+    "summary_ratio": 0.35,
+    "summarizable_prob": 0.6,
+    "important_prob": 0.35,
+    "salience_noise": 0.35,
+    "recency_query_frac": 0.4
+  }
+}

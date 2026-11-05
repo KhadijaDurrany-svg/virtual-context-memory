@@ -1,0 +1,145 @@
+{
+  "config": {
+    "seed": 7,
+    "n_scenarios": 200,
+    "items_per_scenario": 60,
+    "queries_per_scenario": 40,
+    "cost_min": 20,
+    "cost_max": 120,
+    "summary_ratio": 0.35,
+    "summarizable_prob": 0.6,
+    "important_prob": 0.35,
+    "salience_noise": 0.35,
+    "recency_query_frac": 0.4
+  },
+  "budgets": [
+    256,
+    512,
+    1024
+  ],
+  "dataset_checksum": "023cf65edd8990804eed0afc4c9d65a925368ca71573f860431c8bc01a37cd3e",
+  "per_policy": [
+    {
+      "policy": "recency",
+      "budget": 256,
+      "mean_recall": 0.18262500000000004,
+      "ci_lo": 0.173875,
+      "ci_hi": 0.19162500000000002,
+      "mean_utilization": 0.8405141601562499
+    },
+    {
+      "policy": "random",
+      "budget": 256,
+      "mean_recall": 0.16149999999999998,
+      "ci_lo": 0.15225,
+      "ci_hi": 0.17037500000000003,
+      "mean_utilization": 0.8502578125
+    },
+    {
+      "policy": "lru",
+      "budget": 256,
+      "mean_recall": 0.1825,
+      "ci_lo": 0.17375,
+      "ci_hi": 0.191128125,
+      "mean_utilization": 0.8395200195312501
+    },
+    {
+      "policy": "knapsack",
+      "budget": 256,
+      "mean_recall": 0.39862499999999995,
+      "ci_lo": 0.3865,
+      "ci_hi": 0.41087499999999993,
+      "mean_utilization": 0.9761118164062501
+    },
+    {
+      "policy": "recency",
+      "budget": 512,
+      "mean_recall": 0.36950000000000005,
+      "ci_lo": 0.35762499999999997,
+      "ci_hi": 0.38125,
+      "mean_utilization": 0.920189697265625
+    },
+    {
+      "policy": "random",
+      "budget": 512,
+      "mean_recall": 0.30862500000000004,
+      "ci_lo": 0.29662499999999997,
+      "ci_hi": 0.32075000000000004,
+      "mean_utilization": 0.922566162109375
+    },
+    {
+      "policy": "lru",
+      "budget": 512,
+      "mean_recall": 0.36849999999999994,
+      "ci_lo": 0.3566250000000001,
+      "ci_hi": 0.38,
+      "mean_utilization": 0.9186767578125
+    },
+    {
+      "policy": "knapsack",
+      "budget": 512,
+      "mean_recall": 0.5835,
+      "ci_lo": 0.5710000000000001,
+      "ci_hi": 0.59625,
+      "mean_utilization": 0.985968017578125
+    },
+    {
+      "policy": "recency",
+      "budget": 1024,
+      "mean_recall": 0.6032500000000001,
+      "ci_lo": 0.590875,
+      "ci_hi": 0.6154999999999999,
+      "mean_utilization": 0.95435546875
+    },
+    {
+      "policy": "random",
+      "budget": 1024,
+      "mean_recall": 0.48900000000000005,
+      "ci_lo": 0.47724999999999995,
+      "ci_hi": 0.5009999999999999,
+      "mean_utilization": 0.9552863769531251
+    },
+    {
+      "policy": "lru",
+      "budget": 1024,
+      "mean_recall": 0.60125,
+      "ci_lo": 0.589125,
+      "ci_hi": 0.613125,
+      "mean_utilization": 0.9543828124999999
+    },
+    {
+      "policy": "knapsack",
+      "budget": 1024,
+      "mean_recall": 0.794375,
+      "ci_lo": 0.784,
+      "ci_hi": 0.804625,
+      "mean_utilization": 0.9869244384765625
+    }
+  ],
+  "comparisons": [
+    {
+      "budget": 256,
+      "best_baseline": "recency",
+      "treatment_mean": 0.39862499999999995,
+      "best_baseline_mean": 0.18262500000000004,
+      "observed_diff": 0.21600000000000003,
+      "p_value": 9.999000099990002e-05
+    },
+    {
+      "budget": 512,
+      "best_baseline": "recency",
+      "treatment_mean": 0.5835,
+      "best_baseline_mean": 0.36950000000000005,
+      "observed_diff": 0.214,
+      "p_value": 9.999000099990002e-05
+    },
+    {
+      "budget": 1024,
+      "best_baseline": "recency",
+      "treatment_mean": 0.794375,
+      "best_baseline_mean": 0.6032500000000001,
+      "observed_diff": 0.19112499999999996,
+      "p_value": 9.999000099990002e-05
+    }
+  ]
+}
